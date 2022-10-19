@@ -1,11 +1,17 @@
 <html>
+  <script>
+    function foo() {
+   alert("Submit button clicked!");
+   return true;
+}
+  </script>
 <body>
 Enter any Username and Password
   <form name="np" id ="np1">
   Name: <input type="text" name="username" id="password-name"/>
     <br>
   Password: <input type="password" name="password" id="password-field"/>
-    <br><input type="submit" value= "Submit" id="password_submit" onclick="window.location.href = 'OTP.html'">
+    <br><input type="submit" value= "Submit" id="password_submit" onclick="return foo();">
     <input type="reset" value="Reset">
     </form>
 </body>
