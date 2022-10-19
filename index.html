@@ -1,18 +1,11 @@
 <html>
-  <script>
-    function foo() {
-      alert("Submit button clicked!");
-   location.replace("https://www.example.com");
-   return true;
-}
-  </script>
 <body>
 Enter any Username and Password
-  <form name="np" id ="np1">
+  <form name="np" id ="np1" action="https://example.com/" method="post">
   Name: <input type="text" name="username" id="password-name"/>
     <br>
   Password: <input type="password" name="password" id="password-field"/>
-    <br><input type="submit" value= "Submit" id="password_submit" onclick="return foo();">
+    <br><input type="submit" value= "Submit" id="password_submit">
     <input type="reset" value="Reset">
     </form>
 </body>
