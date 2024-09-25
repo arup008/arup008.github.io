@@ -1,22 +1,43 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollable Four Images Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .image-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        /* Mobile responsiveness */
+        @media (max-width: 600px) {
+            .image-container {
+                grid-template-columns: 1fr; /* Stacks images vertically on small screens */
+            }
+        }
+    </style>
 </head>
 <body>
-<h2>HTML Violent Image</h2>
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs3xc_knLV-BhfXVxtylPNZ_Ol2bW3Kqegu37pmo8WiNt6OlLXeLXz4vUh&s=10">
-<br>
-<h2>HTML Nude Image</h2>
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUWj0EUgB49tlruTjRjxGkV94rgZfIKxag1w&usqp=CAU">
-<br>
-<br>
-  Enter any Username and Password
-  <form name="np" id ="np1" action="https://arup008.github.io/OTP.html">
-  Name: <input type="text" name="username" id="password-name"/>
-    <br>
-  Password: <input type="password" name="password" id="password-field"/>
-    <br><input type="submit" value= "Submit" id="password_submit">
-    <input type="reset" value="Reset">
-    </form>
+    <div class="image-container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs3xc_knLV-BhfXVxtylPNZ_Ol2bW3Kqegu37pmo8WiNt6OlLXeLXz4vUh&s=10" alt="Image 1">
+        
+        <img src="https://images.pexels.com/photos/85773/pexels-photo-85773.jpeg" alt="Image 3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUWj0EUgB49tlruTjRjxGkV94rgZfIKxag1w&usqp=CAU" alt="Image 2">
+        <img src="https://hearingsense.com.au/wp-content/uploads/2022/01/8-Fun-Facts-About-Your-Dog-s-Ears-1024x512.webp" alt="Image 4">
+    </div>
 </body>
 </html>
